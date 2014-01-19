@@ -1,4 +1,9 @@
 {
+    "autoload": {
+        "psr-0": {
+            "cntrdr\\": "src/"
+        }
+    },
     "name": "vendor/cntrdr",
     "description": "Description of project cntrdr.",
     "authors": [
@@ -17,6 +22,8 @@
         "symfony/swiftmailer-bundle": "v2.3.4",
         "doctrine/doctrine-bundle": "v1.2.0",
         "sensio/framework-extra-bundle": "v3.0.0",
-        "doctrine/orm": "v2.4.1"
+        "doctrine/orm": "v2.4.1",
+        "sensio/generator-bundle": "v2.3.4",
+        "sensio/distribution-bundle": "v2.3.4"
     }
 }

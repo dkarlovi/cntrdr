@@ -1,0 +1,5 @@
+cntrdr_kraken:
+    resource: "@cntrdrKrakenBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
