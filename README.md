@@ -1,3 +1,8 @@
+# TODO
+- app-wide time offset calculator
+- KrakenClient
+- DB schema
+
 # New checkout
 1. `git clone`
 2. `git submodule init`
