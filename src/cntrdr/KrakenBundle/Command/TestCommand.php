@@ -18,9 +18,7 @@ class TestCommand extends ContainerAwareCommand
     {
         $krakenClient = $this->getContainer()->get('cntrdr.kraken.client');
         
-        $res = $krakenClient->QueryPublic('Assets');
+        $res = $krakenClient->getAssets();
         print_r($res);
-        
-        $output->writeln('Yes!');
     }
 }

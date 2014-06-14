@@ -6,7 +6,7 @@
 
     <parameters>
         <parameter key="kraken.client.class">KrakenAPI</parameter>
-        <parameter key="cntrdr.kraken.client.class">cntrdr\KrakenBundle\Client</parameter>
+        <parameter key="cntrdr.kraken.client.class">cntrdr\KrakenBundle\Client\Client</parameter>
     </parameters>
 
     <services>
@@ -14,9 +14,9 @@
             <argument>%kraken.api.key%</argument>
             <argument>%kraken.api.secret%</argument>
         </service>
+        
         <service id="cntrdr.kraken.client" class="%cntrdr.kraken.client.class%">
-            <argument>%kraken.api.key%</argument>
-            <argument>%kraken.api.secret%</argument>
+            <argument type="service" id="kraken.client"/>
         </service>
     </services>
 </container>
