@@ -14,4 +14,9 @@ class Client
     {
         return $this->krakenClient->QueryPublic('Assets');
     }
+    
+    public function getBalance()
+    {
+        return $this->krakenClient->QueryPrivate('Balance');
+    }
 }
