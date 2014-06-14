@@ -46,7 +46,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         
         if (null !== $returnValue) {
             $mocker
-                ->will($this->returnValue($returnValue));
+                ->will($this->returnValue(array('result' => $returnValue)));
         }
         
         return $apiClient;

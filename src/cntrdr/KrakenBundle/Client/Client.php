@@ -12,11 +12,16 @@ class Client
     
     public function getAssets()
     {
-        return $this->krakenClient->QueryPublic('Assets');
+        return $this->unwrap($this->krakenClient->QueryPublic('Assets'));
     }
     
     public function getBalance()
     {
-        return $this->krakenClient->QueryPrivate('Balance');
+        return $this->unwrap($this->krakenClient->QueryPrivate('Balance'));
+    }
+    
+    protected function unwrap(array $response)
+    {
+        return $response['result'];
     }
 }
