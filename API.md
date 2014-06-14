@@ -1,5 +1,5 @@
 # Kraken API
-At https://www.kraken.com/help/api
+As seen at https://www.kraken.com/help/api
 
 ## `QueryPublic()`
 - `Time`
