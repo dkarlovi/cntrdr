@@ -1,11 +1,6 @@
 imports:
     - { resource: parameters.yml }
 
-services:
-    krakenClient:
-        class: KrakenAPI
-        arguments: [%kraken.api.key%, %kraken.api.secret%]
-    
 framework:
     #esi:             ~
     #translator:      { fallback: "%locale%" }

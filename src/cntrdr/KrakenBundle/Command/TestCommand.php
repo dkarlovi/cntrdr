@@ -16,7 +16,7 @@ class TestCommand extends ContainerAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $krakenClient = $this->getContainer()->get('krakenClient');
+        $krakenClient = $this->getContainer()->get('cntrdr.kraken.client');
         
         $res = $krakenClient->QueryPublic('Assets');
         print_r($res);
