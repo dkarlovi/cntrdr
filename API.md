@@ -16,3 +16,13 @@ At https://www.kraken.com/help/api
 
 ## `QueryPrivate()`
 - `Balance`
+    - per asset
+- `TradeBalance` (needs params: `asset=ZEUR`)
+    - asset summary (in specified asset)
+- `OpenOrders`
+- `ClosedOrders`
+- `QueryOrders` (needs params: `txid`)
+- **TODO:** trades + ledgers
+- `AddOrder` (needs order params)
+    - Order as an object
+- `CancelOrder` (needs params: `txid`)
