@@ -5,13 +5,13 @@ use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class TestCommand extends ContainerAwareCommand
+class AssetsCommand extends ContainerAwareCommand
 {
     protected function configure()
     {
         $this
-            ->setName('kraken:test')
-            ->setDescription('Test Kraken API');
+            ->setName('kraken:assets')
+            ->setDescription('Update Kraken assets');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
