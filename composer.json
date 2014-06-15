@@ -16,18 +16,17 @@
         }
     ],
     "require": {
-        "zendframework/zend-config": "2.2.5",
         "symfony/console": "v2.4.0",
         "symfony/debug": "v2.4.0",
         "symfony/http-kernel": "v2.4.0",
         "symfony/symfony": "v2.4.0",
         "symfony/monolog-bundle": "v2.4.1",
         "symfony/swiftmailer-bundle": "v2.3.4",
-        "doctrine/doctrine-bundle": "v1.2.0",
         "sensio/framework-extra-bundle": "v3.0.0",
-        "doctrine/orm": "v2.4.1",
         "sensio/generator-bundle": "v2.3.4",
         "sensio/distribution-bundle": "v2.3.4",
+        "doctrine/doctrine-bundle": "v1.2.0",
+        "doctrine/orm": "v2.4.3",
         "stof/doctrine-extensions-bundle": "~1.1@dev"
     }
 }
