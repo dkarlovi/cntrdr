@@ -18,6 +18,7 @@ use Symfony\Component\Debug\Debug;
 use Doctrine\Common\Annotations\AnnotationRegistry;  
 
 AnnotationRegistry::registerFile(__DIR__ ."/../vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php");
+AnnotationRegistry::registerAutoloadNamespace("Gedmo\Mapping\Annotation", __DIR__ ."/../vendor/gedmo/doctrine-extensions/lib");
 
 $input = new ArgvInput();
 $env = $input->getParameterOption(array('--env', '-e'), getenv('SYMFONY_ENV') ?: 'dev');
